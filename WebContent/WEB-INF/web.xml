@@ -12,7 +12,23 @@
       </init-param>
       <!--  <load-on-startup>1</load-on-startup> -->
 </servlet>
- 
+
+<servlet>    
+      <servlet-name>initServlet</servlet-name>    
+      <servlet-class>    
+          servlet.InitServlet    
+      </servlet-class>    
+      <!-- 配置获取access_token所需参数appid和appsecret -->    
+      <init-param>    
+          <param-name>appid</param-name>    
+          <param-value>wxdb97e08069f2d95e</param-value>    
+      </init-param>    
+      <init-param>    
+          <param-name>appsecret</param-name>    
+          <param-value>6ddbf43e58d8e6715fdced6ac31ceb2b</param-value>    
+      </init-param>    
+      <load-on-startup>0</load-on-startup>    
+</servlet>     
 <servlet-mapping>
     <servlet-name>springmvc</servlet-name>
     <url-pattern>/</url-pattern>

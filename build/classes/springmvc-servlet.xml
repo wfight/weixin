@@ -15,7 +15,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <!-- scan the package and the sub package -->
     <context:component-scan base-package="test.SpringMVC"/>
- 
+    <context:component-scan base-package="chat.authenticate"/>
+    <context:component-scan base-package="chat"/>
+    
     <!-- don't handle the static resource -->
     <mvc:default-servlet-handler /> 
  
